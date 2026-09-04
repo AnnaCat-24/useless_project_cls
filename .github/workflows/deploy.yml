@@ -31,12 +31,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd "cinematic life score/frontend"
+          cd "cinematic-life-score/frontend"
           npm install
 
       - name: Build site
         run: |
-          cd "cinematic life score/frontend"
+          cd "cinematic-life-score/frontend"
           npm run build
 
       - name: Setup Pages
@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './cinematic life score/frontend/dist'
+          path: './cinematic-life-score/frontend/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
