@@ -28,14 +28,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'cinematic life score/frontend/package-lock.json'
 
       - name: Install dependencies
-        run: cd "cinematic life score/frontend" && npm ci
+        run: |
+          cd "cinematic life score/frontend"
+          npm install
 
       - name: Build site
-        run: cd "cinematic life score/frontend" && npm run build
+        run: |
+          cd "cinematic life score/frontend"
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
