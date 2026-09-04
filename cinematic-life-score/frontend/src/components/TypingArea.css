@@ -1,0 +1,117 @@
+.typing-area-wrap {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 20px;
+  transition: opacity 0.3s ease;
+}
+
+.typing-area-wrap--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.typing-area-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.typing-area-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+}
+
+.typing-area-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #7bc67e;
+  box-shadow: 0 0 6px #7bc67e;
+  animation: blink-dot 1.2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.2; }
+}
+
+.typing-area-next {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.3);
+  font-family: 'Cinzel', serif;
+  font-size: 0.52rem;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.typing-area-next:hover:not(:disabled) {
+  border-color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.6);
+}
+
+/* ── Prompt ──────────────────────────────────────────────────── */
+.typing-prompt {
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  font-style: italic;
+  padding: 12px 14px;
+  border-left: 2px solid;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.03);
+  transition: border-color 0.4s ease, color 0.4s ease;
+}
+
+.typing-prompt--focused   { border-color: #7bc67e; color: rgba(123,198,126,0.8); }
+.typing-prompt--tense     { border-color: #f0c040; color: rgba(240,192,64,0.8); }
+.typing-prompt--intense   { border-color: #f07030; color: rgba(240,112,48,0.8); }
+.typing-prompt--cinematic { border-color: #e84070; color: rgba(232,64,112,0.8); }
+
+/* ── Textarea ────────────────────────────────────────────────── */
+.typing-area {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: rgba(255,255,255,0.88);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  padding: 12px 14px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  caret-color: #e84070;
+}
+
+.typing-area::placeholder {
+  color: rgba(255,255,255,0.18);
+  font-style: italic;
+}
+
+.typing-area:focus {
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 0 18px rgba(74,158,255,0.07);
+}
+
+.typing-area-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.18);
+  text-align: right;
+  margin-top: 5px;
+  font-style: italic;
+}

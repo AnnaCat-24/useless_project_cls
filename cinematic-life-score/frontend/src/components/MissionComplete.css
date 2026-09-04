@@ -1,0 +1,140 @@
+.mission-complete {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 80;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  animation: mc-fade-in 0.8s ease forwards;
+  cursor: pointer; /* click outside to dismiss */
+}
+
+@keyframes mc-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.mission-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  cursor: default;
+}
+
+/* ── Main title ────────────────────────────────────────────── */
+.mission-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.4rem, 5vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #ffffff;
+  text-align: center;
+  animation: mission-glow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes mission-glow {
+  from { text-shadow: 0 0 20px rgba(255,200,100,0.3); }
+  to   { text-shadow: 0 0 60px rgba(255,200,100,0.9), 0 0 120px rgba(255,150,50,0.5); }
+}
+
+/* ── Score card ────────────────────────────────────────────── */
+.mission-score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 36px 56px;
+  min-width: 280px;
+  animation: card-rise 0.7s 0.35s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+@keyframes card-rise {
+  from { opacity: 0; transform: translateY(30px) scale(0.92); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+.mission-score-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+.mission-score-number {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: clamp(4rem, 14vw, 8rem);
+  line-height: 1;
+  animation: number-pop 0.5s 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+@keyframes number-pop {
+  from { transform: scale(0.6); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.mission-score-level {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.mission-score-bar {
+  width: 200px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.mission-score-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  animation: bar-expand 1s 0.9s ease both;
+  transform-origin: left;
+}
+
+@keyframes bar-expand {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.mission-scene-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* ── Dismiss button ────────────────────────────────────────── */
+.mission-dismiss {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  animation: card-rise 0.5s 1.2s ease both;
+}
+
+.mission-dismiss:hover {
+  color: rgba(255, 255, 255, 0.65);
+  border-color: rgba(255, 255, 255, 0.3);
+}

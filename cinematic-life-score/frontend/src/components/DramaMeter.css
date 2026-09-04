@@ -1,0 +1,22 @@
+.drama-meter {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.drama-canvas {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+
+.drama-meter--climax .drama-canvas {
+  filter: drop-shadow(0 0 20px #e84070);
+  animation: climax-pulse 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes climax-pulse {
+  from { filter: drop-shadow(0 0 20px #e84070); }
+  to   { filter: drop-shadow(0 0 45px #ff6090) brightness(1.2); }
+}
