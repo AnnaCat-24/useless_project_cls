@@ -2,7 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Useleess_3.0/',
+  //base: '/Useleess_3.0/',
+  base: './',
   plugins: [react()],
   server: {
     port: 5173,
@@ -15,3 +16,5 @@ export default defineConfig({
     }
   }
 })
+
+
