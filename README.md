@@ -128,8 +128,8 @@ End-to-end data flow: Client-side input telemetry is captured every 500 ms, conv
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[(https://drive.google.com/file/d/1phylT6bEl8YjPBXV2CeXEdUr-EM89jWC/view?usp=drive_link)]
+"Turn your boring desk job into an epic Hollywood thriller." This quick demo shows how Cinematic Life Score reads your typing speed and facial expressions in real time to instantly shift the background music from a calm piano to a dramatic, action-movie orchestra. Watch how a simple late-night email suddenly feels like saving the universe.
 
 ## Team Contributions
 - Mruthula S: Frontend
