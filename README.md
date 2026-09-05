@@ -76,13 +76,16 @@ For Software:
 # Screenshots 
 
 <img width="1854" height="1168" alt="Screenshot from 2026-09-05 06-11-15" src="https://github.com/user-attachments/assets/d5009c6f-986e-4c70-a457-c4db8f9f4906" />
-*Initial dashboard in resting 'Calm' mode (Score: 0) displaying baseline controls, scene description ('Another Ordinary Day'), and inactive instrument synth channels.*
+Initial dashboard in resting 'Calm' mode (Score: 0) displaying baseline controls, scene description ('Another Ordinary Day'), and inactive instrument synth channels.
+
 
 <img width="1854" height="1168" alt="Screenshot from 2026-09-05 06-12-17" src="https://github.com/user-attachments/assets/e782b8c9-6909-4fbd-bd96-889f63573881" />
-*Live session running in 'Tense' state (Score: 56, 'Something Is Happening') with active MediaPipe facial tracking (head movement, tilt, mouth openness), real-time telemetry metrics, and dynamic synth layering.*
+Live session running in 'Tense' state (Score: 56, 'Something Is Happening') with active MediaPipe facial tracking (head movement, tilt, mouth openness), real-time telemetry metrics, and dynamic synth layering.
+
 
 <img width="1854" height="1168" alt="image" src="https://github.com/user-attachments/assets/c69319f3-c758-4ec0-90b0-0841589aedc6" />
-*Post-session recap displaying a peak score of 63 ('Intense') alongside a granular telemetry breakdown (WPM, key rate, corrections, rhythm, and idle time) at the moment of peak drama.*
+Post-session recap displaying a peak score of 63 ('Intense') alongside a granular telemetry breakdown (WPM, key rate, corrections, rhythm, and idle time) at the moment of peak drama.
+
 
 
 # Diagram
