@@ -57,11 +57,17 @@ pip install fastapi uvicorn scikit-learn numpy
 
 # Run
 #Terminal 1: Run Python Backend
+
 cd backend
+
 source venv/bin/activate # Windows: venv\Scripts\activate
+
 uvicorn main:app --reload --port 8000
+
 #Terminal 2: Run Client Frontend
+
 cd frontend
+
 npm run dev
 
 ### Project Documentation
