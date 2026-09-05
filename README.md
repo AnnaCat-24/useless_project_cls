@@ -34,15 +34,25 @@ For Software:
 For Software:
 # Installation
 #Clone the repository
+
 git clone https://github.com/your-username/cinematic-life-score.git
+
 cd cinematic-life-score
+
 #Install client dependencies (all core scoring & synthesis run here)
+
 cd frontend
+
 npm install
+
 #(Optional) Set up the secondary ML backend
+
 cd ../backend
+
 python -m venv venv
+
 source venv/bin/activate  # Windows: venv\Scripts\activate
+
 pip install fastapi uvicorn scikit-learn numpy
 
 # Run
